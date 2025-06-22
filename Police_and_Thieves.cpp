@@ -51,14 +51,15 @@ Notes:
 - We use the greedy approach, ie, for a policemen, we find the first thief that lies in it's range and increase our count.
 
 - Local Best = Global Best:
-	If we try to pair a policeman with the nearest thief (within range), that’s the most efficient use
+If we try to pair a policeman with the nearest thief (within range), that’s the most efficient use
 of that policeman. Waiting or skipping that thief might mean no one catches them later, wasting a chance.
 
 - Avoiding Conflicts Early:
 If you try to look ahead or match far-off thieves, we might end up “stealing” a thief that another
 closer policeman could have caught — leading to fewer total catches overall.
 
-That’s greedy: always making the locally optimal decision (catch the nearest available thief) in hopes of getting the global optimum (max number of catches).
+That’s greedy: always making the locally optimal decision (catch the nearest available thief) in hopes of getting the 
+global optimum (max number of catches).
 
 - To implement this, we use Two-pointer, where `i` represent the `Police` and `j` thief.
 We increase them until both do not point to their representatives.
