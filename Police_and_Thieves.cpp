@@ -17,12 +17,12 @@ class Solution {
             while(arr[i]!='P' && i<n)i++;
             while(arr[j]!='T' && j<n)j++;
             
-            if(i<n && j<n && abs(i-j)<=k){
+            if((i<n && j<n) && abs(i-j)<=k){
                 cnt++;
-                i++;j++;
+                i++; j++;
             }
-            else if(j<n && j<i)j++;
-            else if(i<n && i<j)i++;
+            else if(j>i && j<n)i++;
+            else if(i>j && i<n)j++;
         }
         
         // TC: O(n*k) | SC: O(n)
