@@ -56,7 +56,7 @@ public:
 Notes:
 TC: O(n*L) | SC: O(L) (n: no of palidromes generated, L: length of palindrome)
 
-- As we are required to find the numbers that are both palindrome in base-10 and in base-k, to simply the approach (as brute force will TLE),
+- As we are required to find the numbers that are both palindrome in base-10 and in base-k, to simplify the approach (as brute force will TLE),
 we first generate the base-10 palindromes and then check whether it is a base-k palindrome, if yes, we add it to our `sum` variable.
 
 - In order to generate base-10 palindromes, we define the length of the palindrome first, and then generate
