@@ -62,7 +62,7 @@ we first generate (enumerate) the base-10 palindromes and then check whether it 
 - In order to generate base-10 palindromes, we define the length of the palindrome first, and then generate
 them starting with `length 1` palindrome.
 
-- If the length is odd, say 5, then the 1st-three numbers are unique, and the last digits are equal to 1st two digits in reverse manner.
+- If the length is odd, say 5, then the 1st-three numbers are unique, and the last two digits are equal to 1st two digits in reverse manner.
 So, in order to generate all length 5 palindromes, we use all the 3 digits numbers, and then form them and check,
 if any one of them is a base-k palindrome or not.
 
