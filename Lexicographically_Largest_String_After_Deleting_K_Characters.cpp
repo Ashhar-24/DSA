@@ -19,10 +19,10 @@ class Solution {
             }
             ans.push_back(s[i]);
         }
-            while(k>0 && !ans.empty()){
-                ans.pop_back();
-                k--;
-            }
+        while(k>0 && !ans.empty()){
+          ans.pop_back();
+          k--;
+        }
         return ans;
     }
 };
