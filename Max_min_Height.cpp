@@ -11,7 +11,7 @@ class Solution {
   public:
     bool count(vector<int>arr, int h, int w, int k){
         int n = arr.size();
-        vector<int>water(n+1, 0);
+        vector<int>water(n+1, 0);    // difference array
         int days = 0, currSum = 0;
         for(int i = 0; i<n; i++){
             currSum += water[i];
