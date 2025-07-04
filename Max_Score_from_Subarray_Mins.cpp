@@ -27,6 +27,6 @@ TC: O(n) | SC: O(1)
 - Pure greedy approach that if we take more than 2 elements in the subarray, we would decrease the min elements
 and our sum decreases, which we don't want. 
 We want to maximize our sum , which can be only done if we take the adjacent elements as these would be only case to
-maximize the sum.
+maximize the sum by maximizing the smallest and 2nd smallest element.
 */
 
